@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import "highlight.js/styles/github.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* for block of numbers */
+td.hljs-ln-numbers {
+  position: sticky;
+  left: 0;
+  user-select: none;
+  text-align: center;
+  color: #6f6f6f6b;
+  border-right: 1px solid #cccccc1c;
+  vertical-align: top;
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
+/* for block of code */
+td.hljs-ln-code {
+  padding-left: 10px !important;
+}

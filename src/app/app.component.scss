@@ -1,0 +1,24 @@
+h3 {
+    color: rgb(1, 135, 213);
+}
+
+code {
+    display: block;
+    border: 1px solid rgba(176, 176, 176, 0.686);
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.showing-solution code {
+    background: rgb(188, 250, 188);
+}
+
+.showing-solution button {
+    background: rgb(130, 130, 130);
+}
+
+.explanation {
+    color: rgb(65, 65, 65);
+    font-style: italic;
+
+}
