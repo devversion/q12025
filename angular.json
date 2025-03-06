@@ -96,7 +96,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "q12025/"
+            "baseHref": "/q12025/"
           }
         }
       }
