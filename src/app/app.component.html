@@ -51,6 +51,15 @@
     </li>
   </ul>
 
+  <p style="max-width: 1100px">
+    A <strong>package</strong> is e.g. `&#64;angular/core`,
+    `&#64;angular/forms`, or `&#64;angular/material`. <br />Some packages are
+    very large and have many entry-points. Don't let you confuse by this; the
+    thing that counts is the "package" that you install from NPM. e.g.
+    `&#64;angular/material`; even if there are many entry-points that could seem
+    like individual packages.
+  </p>
+
   <h4>Examples</h4>
   <mat-tab-group
     style="
@@ -60,7 +69,7 @@
     "
   >
     @for (example of examples; track example; let index = $index) {
-      <mat-tab label="Example #{{ index }}">
+      <mat-tab label="Example {{ example.category }} #{{ index }}">
         <div
           [class.showing-solution]="
             example.showSolution || example.after === null
@@ -95,7 +104,7 @@
               mat-flat-button
               (click)="example.showSolution = !example.showSolution"
             >
-              {{ example.showSolution ? "Hide" : "Show" }} solution
+              {{ example.showSolution ? 'Hide' : 'Show' }} solution
             </button>
             <br />
             <br />
